@@ -4,6 +4,12 @@ public class Position {
 	private int x;
 	private int y;
 	
+	public Position(int x, int y){
+		this.x = x;
+		this.y = y;	
+	}
+
+	
 	public int getX(){
 		return x;
 	}
@@ -16,11 +22,16 @@ public class Position {
 		this.x  = x;
 	}
 	
-	public void setY (int x){
+	public void setY (int y){
 		this.y = y;
 	}
 	
-	public boolean equals(int x, int y){
+	public boolean equals(Position that){
 		
+		if (this.x == that.x && this.y == that.y){
+			return true;
+		}
+		return false;
 	}
+	
 }
