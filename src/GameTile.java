@@ -8,11 +8,4 @@ public class GameTile {
 	
 	}
 	
-	public GameTile ( int x, int y){
-		
-	}
-	public String toString(){
-		return null;
-	}
-
 }
