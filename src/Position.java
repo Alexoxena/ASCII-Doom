@@ -4,13 +4,13 @@ public class Position {
 	private int x;
 	private int y;
 	
-	public Position(int x, int y){
+	public Position(int x, int y){ //Konstruktor, Objekt Position kann erstellt werden
 		this.x = x;
 		this.y = y;	
 	}
 
 	
-	public int getX(){
+	public int getX(){ 
 		return x;
 	}
 	
@@ -26,7 +26,7 @@ public class Position {
 		this.y = y;
 	}
 	
-	public boolean equals(Position that){
+	public boolean equals(Position that){  //Koolisionsabfrage (ob 1 objekt gleiche Position wie anderes hat
 		
 		if (this.x == that.x && this.y == that.y){
 			return true;
