@@ -6,6 +6,10 @@ public class WallTile extends GameTile{ //WallTile erbt von Game Tile
 		super(position);
 	}
 
+	public WallTile (){
+		super();
+	}
+	
 	public String toString(){
 		
 		return "#"; //Zeichen mit dem WallTile repräsentiert wird (Wall=#),gibt dieses Zeichen als WallTile aus

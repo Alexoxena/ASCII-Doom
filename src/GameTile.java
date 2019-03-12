@@ -5,7 +5,12 @@ public class GameTile {
 	
 	public GameTile(Position position){
 		this.position=position;
-	
 	}
+		
+	public GameTile(){
+		this.position = new Position(0,0);
+	}
+	
+	
 	
 }
