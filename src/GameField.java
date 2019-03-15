@@ -2,8 +2,8 @@
 public class GameField {
 
 		
-		private int hoehe;
-		private int breite;
+		 int hoehe;
+		 int breite;
 		
 		private GameTile [][] Level;
 
@@ -39,21 +39,14 @@ public class GameField {
 			
 		}
 		
-		public String toString(){ //Ausgabe der Zeichen, müssen dafür wieder in einen String
-			String output = "";
-			
-			for (int j = 0; j < hoehe; j++){  //String wird abgeklappert, einzelne Zeichen werden auf String output drauf addiert
-				
-				for (int i = 0; i<breite; i++){
-					
-					output = output + Level [i][j].toString();
-					
+		public String toString() {
+			String result="";
+			for( int y = 0; y < hoehe; ++y) {
+				for( int x = 0; x < breite; ++x) {
+					result += Level[x][y].toString();
 				}
-				output = output + "\n";
-				
 			}
-			return output;
 			
+			return result;
 		}
-		
 }

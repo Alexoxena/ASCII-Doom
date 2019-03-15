@@ -1,8 +1,8 @@
 
 public class Position {
 	
-	private int x;
-	private int y;
+	int x;
+	int y;
 	
 	public Position(int x, int y){ //Konstruktor, Objekt Position kann erstellt werden
 		this.x = x;
@@ -32,6 +32,10 @@ public class Position {
 			return true;
 		}
 		return false;
+	}
+	
+	public int toIndex(int iWidth){
+		return x+y*iWidth;
 	}
 	
 }

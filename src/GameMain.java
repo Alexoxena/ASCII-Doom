@@ -1,28 +1,22 @@
+import java.io.IOException;
 
 public class GameMain {
 	
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		
-		/*Position position1 = new Position (2,2);
-		Position position2 = new Position (2,2);
-		
-		WallTile wand = new WallTile (position1);
-		EmptyTile empty = new EmptyTile (position2);
-		
+		java.io.DataInputStream in = new java.io.DataInputStream(System.in);
+		World w = new World();
+		System.out.println(w);
+	 
+		String key = in.readLine();
 
-		
-		System.out.println(position1.equals(position2));
-		
-		System.out.println(wand);
-		
-		System.out.println(empty);*/
-		
-		GameField field1 = new GameField (7, 8, "### ##?######        ### ### # ##### # ## ##         # #" );
-		
-		System.out.println(field1);
-		
-			
+		while(key != "q") {
+		w.keyPressed(key);
+		System.out.println(w);
+		key = in.readLine();
+
 	}
 
+}
 }
